@@ -16,15 +16,16 @@ model_parkinsons = data_2['model']
 scaler_parkinson = data_2['scaler']
 
 data_3 = pickle.load(open('autism.pkl','rb'))
-#autism = data_3['model']
+autism = data_3['model']
 autism = data_3['scaler']
 
 with st.sidebar: 
     selected = option_menu('Multiple Disease Prediction System',                          
                           ['Diabetes Prediction',
                            'Heart Disease Prediction',
-                           'Parkinsons Prediction'],
-                          icons=['activity','heart','person'],
+                           'Parkinsons Prediction',
+                           'Autism Prediction'],
+                          icons=['activity','heart','person','activity'],
                           default_index=0)
 
 
