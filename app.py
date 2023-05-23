@@ -16,7 +16,7 @@ model_parkinsons = data_2['model']
 scaler_parkinson = data_2['scaler']
 
 data_3 = pickle.load(open('autism.pkl','rb'))
-autism = data_3['model']
+#autism = data_3['model']
 autism = data_3['scaler']
 
 with st.sidebar: 
