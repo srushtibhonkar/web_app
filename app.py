@@ -275,7 +275,7 @@ if (selected == 'Autism Disease Prediction'):
     # creating a button for Prediction
     
     if st.button('Autism Disease Test Result'):
-        Y = np.array([[A1, A2, A3, Age_Mons, Sex, Ethnicity, Jaundice, Family_mem_with_ASD, Who completed the test]],dtype=np.float64)
+        Y = np.array([[A1, A2, A3, Age_Mons, Sex, Ethnicity, Jaundice, Family_mem_with_ASD, Who_completed_the_test]],dtype=np.float64)
         autism_prediction = model_autism.predict(Y)                          
         if (autism_prediction[0] == 1):
         	autism_diagnosis = 'The person is having heart disease'
