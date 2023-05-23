@@ -4,18 +4,18 @@ from streamlit_option_menu import option_menu
 import numpy as np
 
 
-data = pickle.load(open('./Diabetes/model_diabetes.pkl','rb'))
+data = pickle.load(open('model_diabetes.pkl','rb'))
 model_diabetes = data['model']
 scaler_diabetes = data['scaler']
 
-data_1 = pickle.load(open('./Heart/model_heart.pkl','rb'))
+data_1 = pickle.load(open('model_heart.pkl','rb'))
 model_heart = data_1['model']
 
-data_2 = pickle.load(open('./Parkinsons/model_parkinson.pkl','rb'))
+data_2 = pickle.load(open('model_parkinson.pkl','rb'))
 model_parkinsons = data_2['model']
 scaler_parkinson = data_2['scaler']
 
-data_3 = pickle.load(open('./autism/autism.pkl','rb'))
+data_3 = pickle.load(open('autism.pkl','rb'))
 model_autism = data_3['model']
 scaler_autism = data_3['scaler']
 
